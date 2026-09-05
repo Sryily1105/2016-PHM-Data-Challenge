@@ -22,6 +22,14 @@ The original notebook was reorganized into separate Python modules to improve re
 ├── README.md
 ├── requirements.txt
 │
+├── CMP-data/
+│   ├── testing/
+│   ├── training/
+│   ├── validation/
+│   ├── CMP-test-removalrate.csv
+│   ├── CMP-training-removalrate.csv
+│   └── CMP-validation-removalrate.csv
+│
 ├── __pycache__
 │   ├── data.cpython-38.pyc
 │   ├── data_cleaning.cpython-38.pyc
@@ -30,14 +38,6 @@ The original notebook was reorganized into separate Python modules to improve re
 │   ├── model_building.cpython-38.pyc
 │   ├── training.cpython-38.pyc
 │   └── visualization.cpython-38.pyc
-│
-├── CMP-data/
-│   ├── testing/
-│   ├── training/
-│   ├── validation/
-│   ├── CMP-test-removalrate.csv
-│   ├── CMP-training-removalrate.csv
-│   └── CMP-validation-removalrate.csv
 │
 ├── src/
 │   ├── data.py
