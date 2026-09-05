@@ -49,7 +49,7 @@ cmp-removal-rate-prediction/
 The file docs/PHM16_Data_Challenge_CFP.pdf provides the background information for the PHM 2016 Data Challenge.
 ```
 
-**## Analysis Workflow**
+## Analysis Workflow
 The notebook follows the original CMP analysis logic and is organized into the following steps:
 1. Load raw CMP process files and removal rate labels
 2. Clean missing values, duplicated records, abnormal target values, and sensor outliers
