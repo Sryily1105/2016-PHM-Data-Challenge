@@ -62,13 +62,13 @@ The notebook follows the original CMP analysis logic and is organized into the f
 
 **Python Modules**
 
-- src/data.py: data loading, column standardization, wafer-stage keys, and label merging
-- src/data_cleaning.p: missing value handling, duplicate consolidation, target filtering, and sensor outlier cleaning
-- src/feature_engineering.py: time-series compression, statistical features, trend features, and segment features
-- src/feature_selection.py: correlation filtering and XGBoost-based feature selection
-- src/model_building.py: model definitions, prediction functions, and evaluation metrics
-- src/training.py: time-series cross-validation, Optuna tuning, group-wise training, and ensemble weighting
-- src/visualization.py: EDA plots, target distribution plots, correlation heatmaps, prediction plots, and feature importance plots
+- src/data.py:  data loading, column standardization, wafer-stage keys, and label merging
+- src/data_cleaning.p:  missing value handling, duplicate consolidation, target filtering, and sensor outlier cleaning
+- src/feature_engineering.py:  time-series compression, statistical features, trend features, and segment features
+- src/feature_selection.py:  correlation filtering and XGBoost-based feature selection
+- src/model_building.py:  model definitions, prediction functions, and evaluation metrics
+- src/training.py:  time-series cross-validation, Optuna tuning, group-wise training, and ensemble weighting
+- src/visualization.py:  EDA plots, target distribution plots, correlation heatmaps, prediction plots, and feature importance plots
 
 **How to Run**
 
