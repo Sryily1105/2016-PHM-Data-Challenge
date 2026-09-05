@@ -1,6 +1,6 @@
-# CMP Removal Rate Prediction
+### CMP Removal Rate Prediction
 
-## Project Information
+** Project Information **
 
 - Course: Manufacturing Data Science
 - Instructor / 指導教授: 洪佑鑫
@@ -73,7 +73,7 @@ Install the required packages:
 pip install -r requirements.txt
 
 Run the main notebook:
-jupyter notebook CMP_removal_rate_prediction.ipynb
+CMP_removal_rate_prediction.ipynb
 
 ## Results
 Generated summary tables are saved under:
