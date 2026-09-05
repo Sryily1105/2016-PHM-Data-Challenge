@@ -32,12 +32,12 @@ The original notebook was reorganized into separate Python modules to improve re
 │   └── visualization.py
 │
 ├── CMP-data/
+│   ├── testing/
 │   ├── training/
 │   ├── validation/
-│   ├── testing/
+│   ├── CMP-test-removalrate.csv
 │   ├── CMP-training-removalrate.csv
-│   ├── CMP-validation-removalrate.csv
-│   └── CMP-test-removalrate.csv
+│   └── CMP-validation-removalrate.csv
 │
 ├── docs/
 │   └── PHM16_Data_Challenge_CFP.pdf
