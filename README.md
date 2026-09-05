@@ -45,9 +45,9 @@ cmp-removal-rate-prediction/
 └── results/
     ├── tables/
     └── figures/
+```
 
 The file docs/PHM16_Data_Challenge_CFP.pdf provides the background information for the PHM 2016 Data Challenge.
-```
 
 **## Analysis Workflow**
 The notebook follows the original CMP analysis logic and is organized into the following steps:
