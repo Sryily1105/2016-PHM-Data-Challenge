@@ -1,4 +1,4 @@
-# CMP Removal Rate Prediction
+# CMP-Removal-Rate-Prediction
 
 **Project Information**
 
