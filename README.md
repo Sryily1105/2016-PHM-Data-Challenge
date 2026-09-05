@@ -22,15 +22,6 @@ The original notebook was reorganized into separate Python modules to improve re
 ├── README.md
 ├── requirements.txt
 │
-├── __pycache__
-│   ├── data.cpython-38.pyc
-│   ├── data_cleaning.cpython-38.pyc
-│   ├── feature_engineering.cpython-38.pyc
-│   ├── feature_selection.cpython-38.pyc
-│   ├── model_building.cpython-38.pyc
-│   ├── training.cpython-38.pyc
-│   └── visualization.cpython-38.pyc
-│
 ├── CMP-data/
 │   ├── testing/
 │   ├── training/
