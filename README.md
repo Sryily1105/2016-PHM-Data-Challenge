@@ -1,66 +1,91 @@
-# 2016-PHM-Data-Challenge
-Machine learning analysis for predicting CMP average material removal rate using the 2016 PHM Data Challenge dataset.
+# CMP Removal Rate Prediction
 
-### 分析目標
+## Project Information
 
-- 建立 wafer-stage 層級的製程特徵
-- 比較 XGBoost、Random Forest 與 SVR 的預測表現
-- 評估集成模型的效果
-- 分析重要特徵，提出製程與設備管理建議
+- Course: Manufacturing Data Science
+- Instructor / 指導教授: 洪佑鑫
+- Topic: CMP removal rate prediction
+- Dataset: 2016 PHM Data Challenge CMP dataset
 
-### 資料來源
+## Project Overview
 
-本專案使用 PHM Data Challenge 2016 CMP 資料
+This project analyzes the CMP dataset from the 2016 PHM Data Challenge and builds machine learning models to predict wafer removal rate.
 
-資料取得方式、欄位與檔案配置請參考
-[data/README.md](data/README.md)
+The original notebook was reorganized into separate Python modules to improve readability, reproducibility, and GitHub project structure. The main analysis workflow is kept in `CMP_removal_rate_prediction.ipynb`, while reusable functions are stored in the `src/` folder.
 
-預測目標為 `AVG_REMOVAL_RATE`，
-樣本以 `WAFER_ID` 與 `STAGE` 識別
+## Repository Structure
 
-### 分析流程
+```text
+cmp-removal-rate-prediction/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── CMP_removal_rate_prediction.ipynb
+│
+├── src/
+│   ├── data.py
+│   ├── data_cleaning.py
+│   ├── feature_engineering.py
+│   ├── feature_selection.py
+│   ├── model_building.py
+│   ├── training.py
+│   └── visualization.py
+│
+├── CMP-data/
+│   ├── training/
+│   ├── validation/
+│   ├── testing/
+│   ├── CMP-training-removalrate.csv
+│   ├── CMP-validation-removalrate.csv
+│   └── CMP-test-removalrate.csv
+│
+├── docs/
+│   └── PHM16_Data_Challenge_CFP.pdf
+│
+└── results/
+    ├── tables/
+    └── figures/
 
-1. 資料讀取與品質檢查
-2. 資料清理與時序特徵工程
-3. 探索性資料分析
-4. 特徵篩選、模型調參與交叉驗證
-5. 模型比較與集成。
-6. 特徵解釋與製程建議
+The file docs/PHM16_Data_Challenge_CFP.pdf provides the background information for the PHM 2016 Data Challenge.
 
-### 專案結構
+**## Analysis Workflow**
+The notebook follows the original CMP analysis logic and is organized into the following steps:
+1. Load raw CMP process files and removal rate labels
+2. Clean missing values, duplicated records, abnormal target values, and sensor outliers
+3. Compress time-series process data into wafer-level statistical features
+4. Perform feature filtering using correlation analysis and XGBoost feature importance
+5. Train machine learning models with time-series cross-validation
+6. Compare group-wise models and ensemble predictions
+7. Export prediction results and summary tables
 
-- `CMP.ipynb`：完整分析流程與結果說明
-- `src/`：資料處理、模型訓練與評估函式
-- `data/`：資料說明、原始資料與處理後資料
-- `results/`：圖表與結果表格
+## Python Modules
+- src/data.py: data loading, column standardization, wafer-stage keys, and label merging
+- src/data_cleaning.py: missing value handling, duplicate consolidation, target filtering, and sensor outlier cleaning
+- src/feature_engineering.py: time-series compression, statistical features, trend features, and segment features
+- src/feature_selection.py: correlation filtering and XGBoost-based feature selection
+- src/model_building.py: model definitions, prediction functions, and evaluation metrics
+- src/training.py: time-series cross-validation, Optuna tuning, group-wise training, and ensemble weighting
+- src/visualization.py: EDA plots, target distribution plots, correlation heatmaps, prediction plots, and feature importance plots
 
-## 執行方式
+## How to Run
+Install the required packages:
+pip install -r requirements.txt
 
-### 1. 安裝套件
+Run the main notebook:
+jupyter notebook CMP_removal_rate_prediction.ipynb
 
-```bash
-python -m pip install -r requirements.txt
-```
+## Results
+Generated summary tables are saved under:
+results/tables/
 
-### 2. 準備資料
+Figures can be saved under:
+results/figures/
 
-依照 [資料說明](data/README.md)，
-將資料放入 `data/raw/` 的對應資料夾
+Typical output files include model comparison tables, selected feature summaries, validation predictions, final test predictions, and group-wise performance reports.
 
-### 3. 執行分析
+## Notes
+This project keeps the modeling logic consistent with the original notebook while improving the code organization for GitHub. The notebook is intended to show the complete analysis flow, while the Python files provide reusable functions for data processing, modeling, training, and visualization.
 
-從專案根目錄啟動 Jupyter：
-
-```bash
-jupyter notebook
-```
-
-開啟 `CMP.ipynb`，選擇安裝好套件的 Python 環境，由上往下執行所有 cells
-
-## 分析結果
-
-待整理後重新執行，再補上模型比較表與代表性圖表
-
-## 分析限制
-
-待補上資料排除規則、評估範圍與方法限制
+## Reference
+- 2016 PHM Data Challenge CMP dataset
+- PHM16 Data Challenge CFP document
