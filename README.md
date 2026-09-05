@@ -16,7 +16,7 @@ The original notebook was reorganized into separate Python modules to improve re
 **Repository Structure**
 
 ```text
-cmp-removal-rate-prediction/
+CMP-Removal-Rate-Prediction/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
