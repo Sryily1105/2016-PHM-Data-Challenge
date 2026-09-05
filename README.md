@@ -1,14 +1,14 @@
 # 2016-PHM-Data-Challenge
 Machine learning analysis for predicting CMP average material removal rate using the 2016 PHM Data Challenge dataset.
 
-## 分析目標
+### 分析目標
 
 - 建立 wafer-stage 層級的製程特徵
 - 比較 XGBoost、Random Forest 與 SVR 的預測表現
 - 評估集成模型的效果
 - 分析重要特徵，提出製程與設備管理建議
 
-## 資料來源
+### 資料來源
 
 本專案使用 PHM Data Challenge 2016 CMP 資料
 
@@ -18,7 +18,7 @@ Machine learning analysis for predicting CMP average material removal rate using
 預測目標為 `AVG_REMOVAL_RATE`，
 樣本以 `WAFER_ID` 與 `STAGE` 識別
 
-## 分析流程
+### 分析流程
 
 1. 資料讀取與品質檢查
 2. 資料清理與時序特徵工程
@@ -27,7 +27,7 @@ Machine learning analysis for predicting CMP average material removal rate using
 5. 模型比較與集成。
 6. 特徵解釋與製程建議
 
-## 專案結構
+### 專案結構
 
 - `CMP.ipynb`：完整分析流程與結果說明
 - `src/`：資料處理、模型訓練與評估函式
