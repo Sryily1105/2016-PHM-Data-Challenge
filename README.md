@@ -46,8 +46,9 @@ The original notebook was reorganized into separate Python modules to improve re
     ├── tables/
     └── figures/
 
-The file docs/PHM16_Data_Challenge_CFP.pdf provides the background information for the PHM 2016 Data Challenge.
 ```
+The file docs/PHM16 Data Challenge CFP.pdf provides the background information for the PHM 2016 Data Challenge.
+
 
 **Analysis Workflow**
 
@@ -63,7 +64,7 @@ The notebook follows the original CMP analysis logic and is organized into the f
 **Python Modules**
 
 - src/data.py:  data loading, column standardization, wafer-stage keys, and label merging
-- src/data_cleaning.p:  missing value handling, duplicate consolidation, target filtering, and sensor outlier cleaning
+- src/data_cleaning.py:  missing value handling, duplicate consolidation, target filtering, and sensor outlier cleaning
 - src/feature_engineering.py:  time-series compression, statistical features, trend features, and segment features
 - src/feature_selection.py:  correlation filtering and XGBoost-based feature selection
 - src/model_building.py:  model definitions, prediction functions, and evaluation metrics
@@ -73,18 +74,18 @@ The notebook follows the original CMP analysis logic and is organized into the f
 **How to Run**
 
 Install the required packages:
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 Run the main notebook:
-CMP_removal_rate_prediction.ipynb
+- CMP_removal_rate_prediction.ipynb
 
 **Results**
 
 Generated summary tables are saved under:
-results/tables/
+- results/tables/
 
 Figures can be saved under:
-results/figures/
+- results/figures/
 
 Typical output files include model comparison tables, selected feature summaries, validation predictions, final test predictions, and group-wise performance reports.
 
