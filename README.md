@@ -16,7 +16,7 @@ The original notebook was reorganized into separate Python modules to improve re
 **Repository Structure**
 
 ```text
-CMP-Removal-Rate-Prediction/
+2016-PHM-Data-Challenge/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
