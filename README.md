@@ -7,13 +7,13 @@
 - Topic: CMP removal rate prediction
 - Dataset: 2016 PHM Data Challenge CMP dataset
 
-## Project Overview
+**Project Overview**
 
 This project analyzes the CMP dataset from the 2016 PHM Data Challenge and builds machine learning models to predict wafer removal rate.
 
 The original notebook was reorganized into separate Python modules to improve readability, reproducibility, and GitHub project structure. The main analysis workflow is kept in `CMP_removal_rate_prediction.ipynb`, while reusable functions are stored in the `src/` folder.
 
-## Repository Structure
+**Repository Structure**
 
 ```text
 cmp-removal-rate-prediction/
@@ -49,7 +49,7 @@ cmp-removal-rate-prediction/
 The file docs/PHM16_Data_Challenge_CFP.pdf provides the background information for the PHM 2016 Data Challenge.
 ```
 
-## Analysis Workflow
+**Analysis Workflow**
 The notebook follows the original CMP analysis logic and is organized into the following steps:
 1. Load raw CMP process files and removal rate labels
 2. Clean missing values, duplicated records, abnormal target values, and sensor outliers
@@ -59,7 +59,7 @@ The notebook follows the original CMP analysis logic and is organized into the f
 6. Compare group-wise models and ensemble predictions
 7. Export prediction results and summary tables
 
-## Python Modules
+**Python Modules**
 - src/data.py: data loading, column standardization, wafer-stage keys, and label merging
 - src/data_cleaning.py: missing value handling, duplicate consolidation, target filtering, and sensor outlier cleaning
 - src/feature_engineering.py: time-series compression, statistical features, trend features, and segment features
@@ -68,14 +68,14 @@ The notebook follows the original CMP analysis logic and is organized into the f
 - src/training.py: time-series cross-validation, Optuna tuning, group-wise training, and ensemble weighting
 - src/visualization.py: EDA plots, target distribution plots, correlation heatmaps, prediction plots, and feature importance plots
 
-## How to Run
+**How to Run**
 Install the required packages:
 pip install -r requirements.txt
 
 Run the main notebook:
 CMP_removal_rate_prediction.ipynb
 
-## Results
+**Results**
 Generated summary tables are saved under:
 results/tables/
 
@@ -84,9 +84,9 @@ results/figures/
 
 Typical output files include model comparison tables, selected feature summaries, validation predictions, final test predictions, and group-wise performance reports.
 
-## Notes
+**Notes**
 This project keeps the modeling logic consistent with the original notebook while improving the code organization for GitHub. The notebook is intended to show the complete analysis flow, while the Python files provide reusable functions for data processing, modeling, training, and visualization.
 
-## Reference
+**Reference**
 - 2016 PHM Data Challenge CMP dataset
 - PHM16 Data Challenge CFP document
