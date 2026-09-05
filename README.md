@@ -1,6 +1,6 @@
-### CMP Removal Rate Prediction
+# CMP Removal Rate Prediction
 
-** Project Information **
+**Project Information**
 
 - Course: Manufacturing Data Science
 - Instructor / 指導教授: 洪佑鑫
