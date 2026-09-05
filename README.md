@@ -17,18 +17,18 @@ The original notebook was reorganized into separate Python modules to improve re
 
 ```text
 2016-PHM-Data-Challenge/
-├── README.md
-├── requirements.txt
 ├── .gitignore
 ├── CMP_removal_rate_prediction.ipynb
+├── README.md
+├── requirements.txt
 ├── __pycache__
 │   ├── data.cpython-38.pyc
 │   ├── data_cleaning.cpython-38.pyc
 │   ├── feature_engineering.cpython-38.pyc
-│   ├── feature_selection.py
-│   ├── model_building.py
-│   ├── training.py
-│   └── visualization.py
+│   ├── feature_selection.cpython-38.pyc
+│   ├── model_building.cpython-38.pyc
+│   ├── training.cpython-38.pyc
+│   └── visualization.cpython-38.pyc
 │
 ├── src/
 │   ├── data.py
