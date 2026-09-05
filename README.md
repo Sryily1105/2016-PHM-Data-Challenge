@@ -21,6 +21,7 @@ The original notebook was reorganized into separate Python modules to improve re
 ├── CMP_removal_rate_prediction.ipynb
 ├── README.md
 ├── requirements.txt
+│
 ├── __pycache__
 │   ├── data.cpython-38.pyc
 │   ├── data_cleaning.cpython-38.pyc
@@ -30,6 +31,14 @@ The original notebook was reorganized into separate Python modules to improve re
 │   ├── training.cpython-38.pyc
 │   └── visualization.cpython-38.pyc
 │
+├── CMP-data/
+│   ├── testing/
+│   ├── training/
+│   ├── validation/
+│   ├── CMP-test-removalrate.csv
+│   ├── CMP-training-removalrate.csv
+│   └── CMP-validation-removalrate.csv
+│
 ├── src/
 │   ├── data.py
 │   ├── data_cleaning.py
@@ -38,14 +47,6 @@ The original notebook was reorganized into separate Python modules to improve re
 │   ├── model_building.py
 │   ├── training.py
 │   └── visualization.py
-│
-├── CMP-data/
-│   ├── testing/
-│   ├── training/
-│   ├── validation/
-│   ├── CMP-test-removalrate.csv
-│   ├── CMP-training-removalrate.csv
-│   └── CMP-validation-removalrate.csv
 │
 ├── docs/
 │   └── PHM16_Data_Challenge_CFP.pdf
