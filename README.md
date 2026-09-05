@@ -3,7 +3,7 @@
 **Project Information**
 
 - Course: Manufacturing Data Science
-- Instructor / 指導教授: 洪佑鑫
+- Instructor: Yu-Hsin Hung
 - Topic: CMP removal rate prediction
 - Dataset: 2016 PHM Data Challenge CMP dataset
 
