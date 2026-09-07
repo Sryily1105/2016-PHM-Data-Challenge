@@ -1,0 +1,7 @@
+group,model,best_inner_rmse_train,best_params
+low,XGBoost,6.948762114144204,"{""n_estimators"": 846, ""max_depth"": 3, ""learning_rate"": 0.02867352437698412, ""colsample_bytree"": 0.8018640653767122}"
+low,RandomForest,6.69552923895651,"{""n_estimators"": 363, ""max_depth"": 18, ""min_samples_split"": 5, ""max_features"": 0.2646825042065585}"
+low,SVR,5.870201491867568,"{""C"": 46.363553354273, ""epsilon"": 0.01207421741574068, ""gamma"": 0.009881901696883022}"
+high,XGBoost,4.4298148243373285,"{""n_estimators"": 714, ""max_depth"": 2, ""learning_rate"": 0.030979789939102283, ""colsample_bytree"": 0.9966305331801122}"
+high,RandomForest,4.7515809066697,"{""n_estimators"": 286, ""max_depth"": 12, ""min_samples_split"": 4, ""max_features"": 0.20100623989034455}"
+high,SVR,4.712997543476033,"{""C"": 19.684248115083875, ""epsilon"": 0.0436180343132182, ""gamma"": 0.0007728248525001736}"
