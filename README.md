@@ -43,8 +43,8 @@ The original notebook was reorganized into separate Python modules to improve re
 │   └── PHM16_Data_Challenge_CFP.pdf
 │
 └── results/
-    ├── tables/
-    └── figures/
+    ├── figures/
+    └── tables/
 ```
 The file docs/PHM16 Data Challenge CFP.pdf provides the background information for the PHM 2016 Data Challenge.
 
